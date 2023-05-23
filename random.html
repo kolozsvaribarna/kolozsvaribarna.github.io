@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Sliding Background on Hover</title>
+
+  <style>
+    
+
+
+
+    a {
+      font-family: sans-serif;
+      font-size: 1.5em;
+      font-weight: bolder;
+      line-height: 3em;
+      padding: 10px;
+      text-decoration: none;
+      padding: 0;
+    }
+
+   
+
+    .bg_slider {
+      --initialTextColor: #FFF;
+      --slideTextColor: #272838;
+
+      --initialBgColor: #272838;
+      --slideBgColor: #FFF;
+
+      color: var(--initialTextColor);
+
+      background-image: linear-gradient(90deg,
+          var(--initialBgColor) 0%,
+          var(--initialBgColor) 50%,
+          var(--slideBgColor) 50%,
+          var(--slideBgColor) 100%);
+      background-size: 400%;
+      transition: background-position .3s cubic-bezier(.47, .1, 1, .63),
+        color .2s linear;
+      transition-delay: 0.0s, 0.15s;
+    }
+
+    .bg_slider:hover {
+      color: var(--slideTextColor);
+      cursor: pointer;
+      background-position: -50% 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>a show about nothing</h1>
+  
+    <a class="bg_slider" href="http://en.wikipedia.org/wiki/Jerry_Seinfeld" target="_blank">
+        Jerry Seinfeld</a>
+    <a class="bg_slider" href="http://en.wikipedia.org/wiki/George_Costanza" target="_blank">
+        George Costanza</a>
+    <a class="bg_slider" href="http://en.wikipedia.org/wiki/Cosmo_Kramer" target="_blank"Cosmo Kramer</a>
+    <a class="bg_slider" href="http://en.wikipedia.org/wiki/Elaine_Benes" target="_blank">
+        Elaine Benes</a>
+  
+</body>
+
+</html>
