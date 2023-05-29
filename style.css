@@ -7,8 +7,9 @@
 }
 /* splash screen */
 .intro {
+    pointer-events: none;
     position: fixed;
-    z-index: 2;
+    z-index: 4;
     left: 0;
     top: 0;
     width: 100%;
@@ -21,8 +22,9 @@
     align-items: center;
 }
 .introRed {
+    pointer-events: none;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     left: 0;
     top: 0;
     width: 100%;
@@ -32,6 +34,7 @@
 }
 #logoTitle,
 #altTitle {
+    pointer-events: none;
     color: #f5f5f5;
     font-variant: small-caps;
 }
@@ -44,6 +47,62 @@
     letter-spacing: 0.2vw;
     font-variant: small-caps
 }
+.kanjiTop a,
+.altTop a {
+    color: #f5f5f5;
+    text-decoration: none;
+}
+/* footer */
+.altBot a {
+    color: #5e6164;
+    text-decoration: none;
+    letter-spacing: 0.2vw;
+    font-variant: small-caps
+}
+.footer-text {
+    color: #5e6164;
+    font-variant: small-caps;
+    font-size: 1em;
+}
+.footer {
+    height: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #212529;
+}
+.footer a:hover,
+.footer-text:hover {
+    color: #900C3F;
+}
+/* svg hover */
+.footer-icon {
+    width: .9vw;
+    height: .9vw;
+    display: inline-block;
+    text-align: center;
+    margin: 0 .35vw 0 .35vw;
+    background-size: cover;
+}
+.icon-discord {
+    background-image: url(img/discord.svg);
+}
+.icon-discord:hover {
+    background-image: url(img/discord-red.svg);
+}
+.icon-github {
+    background-image: url(img/github.svg);
+}
+.icon-github:hover {
+    background-image: url(img/github-red.svg);
+}
+.icon-instagram {
+    background-image: url(img/instagram.svg);
+}
+.icon-instagram:hover {
+    background-image: url(img/instagram-red.svg);
+}
 /* bracket color */
 .spanRed {
     color: #900C3F;
@@ -51,11 +110,23 @@
 }
 /* second nav bar */
 .nav2 {
-    border-top: 2px solid #900C3F;
+    /* border-top: 2px solid #900C3F; */
     background-color: #2C3034;
 }
 /* nav link hover */
 .navA {
+    text-decoration: none;
+}
+.navA_active {
+    pointer-events: none;
+    font-weight: bold;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+    box-sizing: border-box;
+    text-decoration: none;
+    border-top: 3px solid #900C3F;
+}
+.navA_active a {
     text-decoration: none;
 }
 .bg_slider {
@@ -65,8 +136,55 @@
     box-sizing: border-box;
     background: linear-gradient(#2C3034, #2C3034 50%, #900C3F 50%, #900C3F);
     background-size: 100% 200%;
-    transition: background 1s;
+    transition: background 0.5s;
 }
 .bg_slider:hover {
     background-position: -100% -100%;
+}
+/* main page */
+.mainSite {
+    margin: 0 auto;
+    background-color: #2C3034F6;
+    color: #f5f5f5;
+}
+.titleHeader {
+    font-size: 5vh;
+    width: fit-content;
+    margin: 0 auto;
+    font-variant: small-caps;
+    text-align: center;
+    padding-top: 20px;
+}
+#introText {
+    pointer-events: none;
+}
+#introText h3 {
+    font-size: 2.5em;
+    font-variant: small-caps; 
+}
+#introText p {
+    text-indent: 2em;
+    font-size: 1.5em;
+    text-align: justify;
+    font-variant: small-caps;
+}
+#introText p:last-child {
+    text-indent: 0;
+}
+#introText a {
+    text-decoration: none;
+    color: #900C3F;
+}
+#emailCheck {
+    width: 15vw;
+}
+#formDiv {
+    font-variant: small-caps;
+}
+/* gallery */
+.gallery img {
+    border-radius: 2px;
+}
+.row-content-height {
+    height: 100vh;
 }
