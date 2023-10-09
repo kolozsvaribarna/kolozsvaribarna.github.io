@@ -1,0 +1,25 @@
+body {
+    background-color: #141414;
+}
+.intro {
+    position: relative;
+    height: 98vh;
+}
+#introText {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 5em;
+    font-family: monospace;
+}
+.underscore {
+    color: #900C3F;
+    animation: blinker .4s step-end infinite alternate;
+}
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
