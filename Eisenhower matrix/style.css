@@ -1,54 +1,55 @@
 body {
-    font-family: Arial;
-    box-sizing: border-box;
+  font-family: Arial;
+  box-sizing: border-box;
 }
-/*---------*/
+.title {
+  text-align: center;
+  margin: 5vh 0;
+  font-weight: bold;
+}
 .task {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 .example-parent {
-    border: 2px solid #DFA612;
-    color: black;
-    display: flex;
-    font-family: sans-serif;
-    font-weight: bold;
-  }
-  
-  .example-origin {
-    flex-basis: 100%;
-    flex-grow: 1;
-    padding: 10px;
-  }
-  
-  .example-draggable {
-    background-color: #4AAE9B;
-    font-weight: normal;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    padding: 10px;
-  }
-  
-  .example-dropzone {
-    background-color: #6DB65B;
-    flex-basis: 100%;
-    flex-grow: 1;
-    padding: 10px;
-  }
-  /*----------------*/
+  border: 2px solid #DFA612;
+  color: black;
+  display: flex;
+  font-family: sans-serif;
+  font-weight: bold;
+}  
+.example-origin {
+  flex-basis: 100%;
+  /* flex-grow: 1; */
+  padding: 10px;
+}  
+.task {
+  background-color: #4AAE9B;
+  font-weight: normal;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 10px;
+}  
+.example-dropzone {
+  background-color: #6DB65B;
+  flex-basis: 100%;
+  flex-grow: 1;
+  padding: 10px;
+  height: max-content;
+}
 #do, #decide, #delegate, #delete {
-    color: #ffffff;
-    height: 18vh;
+  color: #ffffff;
+  height: 18vh;
 }
 #do {
-    background-color: #1a4536;
+  background-color: #1a4536;
 }
 #decide {
-    background-color: #3a9a79;
+  background-color: #3a9a79;
 }
 #delegate {
-    background-color: #FFAE42;
+  background-color: #FFAE42;
 }
 #delete {
-    background-color: #790a34;
+  background-color: #790a34;
 }
