@@ -1,0 +1,42 @@
+body {
+    font-family: Arial;
+    box-sizing: border-box;
+}
+/* .title {text-align: center;} */
+.matrix {
+    width: 75vw;
+    margin: 0 auto;
+    padding: 10px 20px 10px 0;
+    border: black solid 3px;
+    border-radius:7px;
+    background-color: #d0d0d0;
+}
+.box {
+    font-weight: bold;
+    font-size:20px;
+    padding:20px;
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align: center;
+}
+.matrix_row {
+    height: 20vh;
+}
+#do, #decide, #delegate, #delete {
+    color: #ffffff;
+    height: 18vh;
+}
+#do {
+    background-color: #1a4536;
+}
+#decide {
+    background-color: #3a9a79;
+}
+#delegate {
+    background-color: #FFAE42;
+}
+#delete {
+    background-color: #790a34;
+}
