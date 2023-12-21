@@ -1,13 +1,21 @@
-function allowDrop(ev) {
-    ev.preventDefault();
+function onDragStart(event) {
+    event
+      .dataTransfer
+      .setData('text/plain', event.target.id);
+    event.currentTarget.style.backgroundColor = 'yellow';
 }
-  
-function drag(ev) {
-    ev.dataTransfer.setData("text", ev.target.id);
+
+function onDragOver(event) {
+    event.preventDefault();
 }
-  
-function drop(ev) {
-    ev.preventDefault();
-    var data = ev.dataTransfer.getData("text");
-    ev.target.appendChild(document.getElementById(data));
+
+function onDrop(event) {
+    const id = event
+      .dataTransfer
+      .getData('text');
+    
+    const draggableElement = document.getElementById(id);  
+    const dropzone = event.target;
+    dropzone.appendChild(draggableElement);
+    event.dataTransfer.clearData();
 }
