@@ -4,24 +4,35 @@ body::-webkit-scrollbar{
     scrollbar-width: none;
 }
 body {
-    background-color: #141414; /*#141414*/
-    color: #fff; /*#FFF*/
+    background-color: #141414;
+    color: #EAEFF2;
+}
+.light-mode {
+    background-color: #EAEFF2;
+    color: #141414;
 }
 .main {
-    height: 97vh;
+    height: 96vh;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: monospace;
 }
 .text {
-    font-size: 5em;
+    font-size: 7vw; /* 5em*/
 }
 .underscore {
     color: #900C3F;
-    font-size: 5em;
+    font-size: 7vw; /* 5em*/
     animation: blinker .4s step-end infinite alternate;
 }
 @keyframes blinker {
     50% {opacity: 0;}
+}
+#colourToggle {
+    background-color: #900C3F;
+    border: none;
+    border-radius: 3px;
+    color: #EAEFF2;
+    padding: 4px;
 }

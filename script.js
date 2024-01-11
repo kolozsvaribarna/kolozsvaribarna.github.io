@@ -1,6 +1,6 @@
 var i = 0;
 var txt = "Barna";
-var speed = 150;
+var speed = 200;
 
 (function typeWriter() {
     if (i < txt.length) {
@@ -9,3 +9,8 @@ var speed = 150;
         setTimeout(typeWriter, speed);
     }
 })();
+
+function modeswitch() {
+    b = document.body;
+    b.classList.toggle('light-mode')
+}
