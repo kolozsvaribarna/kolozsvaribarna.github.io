@@ -1,3 +1,6 @@
+* {
+	box-sizing: border-box;
+}
 body::-webkit-scrollbar{
     display: none;
     -ms-overflow-style: none;
@@ -6,16 +9,10 @@ body::-webkit-scrollbar{
 body {
     background-color: #141414;
     color: #EAEFF2;
+    transition: all ease-in-out 0.3s;
 }
-#colourToggle {
-    background-color: #900C3F;
-    border: none;
-    border-radius: 3px;
-    color: #EAEFF2;
-    padding: 4px;
-}
-.lightMode {
-    background-color: #EAEFF2;
+body.light-theme {
+	background-color: #EAEFF2;
     color: #141414;
 }
 .main {
@@ -35,4 +32,35 @@ body {
 }
 @keyframes blinker {
     50% {opacity: 0;}
+}
+.toggle input[type=checkbox] {
+	display: none;
+}
+.toggle label {
+	background-color: #2B2B2B;
+	border: 2px solid #EAEFF2;
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: all ease-in-out 0.3s;
+	width: 88px; /* 2*x + 2*2 */
+	height: 46px; /* x + 2*2 */
+}
+.toggle label::after {
+	background-color: #900C3F;
+	content: ' ';
+	cursor: pointer;
+	display: inline-block;
+	position: absolute;
+	transition: all ease-in-out 0.3s;
+	width: 42px; /* x */
+	height: 42px; /* x */
+}
+.toggle input[type=checkbox]:checked ~ label { /* light mode*/
+	background-color: #EAEFF2;
+	border-color: #141414;
+}
+.toggle input[type=checkbox]:checked ~ label::after {
+	background-color: #900C3F;
+	transform: translateX(42px); /* x */
 }

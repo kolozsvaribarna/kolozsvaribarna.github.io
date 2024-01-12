@@ -9,6 +9,13 @@ var i = 0;
     }
 })();
 
-function modeSwitch() {
-    document.body.classList.toggle('lightMode')
-}
+let toggle = document.getElementById('toggle');
+let body = document.body;
+toggle.addEventListener('input', (e) => {
+	let isChecked = e.target.checked;
+	if(isChecked) {
+		body.classList.toggle('light-theme');
+	} else {
+		body.classList.toggle('light-theme');
+	}
+});
