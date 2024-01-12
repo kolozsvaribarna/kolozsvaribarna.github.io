@@ -7,7 +7,14 @@ body {
     background-color: #141414;
     color: #EAEFF2;
 }
-.light-mode {
+#colourToggle {
+    background-color: #900C3F;
+    border: none;
+    border-radius: 3px;
+    color: #EAEFF2;
+    padding: 4px;
+}
+.lightMode {
     background-color: #EAEFF2;
     color: #141414;
 }
@@ -28,11 +35,4 @@ body {
 }
 @keyframes blinker {
     50% {opacity: 0;}
-}
-#colourToggle {
-    background-color: #900C3F;
-    border: none;
-    border-radius: 3px;
-    color: #EAEFF2;
-    padding: 4px;
 }
