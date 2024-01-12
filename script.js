@@ -1,7 +1,7 @@
-var i = 0;
+let i = 0;
 (function typeWriter() {
-    var txt = "Barna";
-    var speed = 200;
+    let txt = "Barna";
+    let speed = 200;
     if (i < txt.length) {
         document.getElementsByClassName('text')[0].innerHTML += txt.charAt(i);
         i++;
