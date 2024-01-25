@@ -41,13 +41,6 @@
     cursor: grab;
 }
 
-.list_item p {
-    width: fit-content;
-    font-weight: bold;
-    margin-right: 15px;
-    margin-left: 20px;
-}
-
 .delButt {
     margin: 0 15px 0 auto;
     background-color: white;
@@ -56,4 +49,16 @@
     border: none;
     border-radius: 50%;
     padding: 5px 9px;
+}
+
+.list_item input {
+    background-color: maroon;
+    color: white;
+    border: none;
+    margin-left: 10px;
+    padding: 10px 5px;
+}
+
+::placeholder {
+    color: white;
 }

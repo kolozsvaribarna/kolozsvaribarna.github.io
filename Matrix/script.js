@@ -52,36 +52,27 @@ function itemDraggable() {
     })
 }
     const deleteButtons = document.querySelectorAll('.delButt');
-
     function removeMe() {
-        // this is the button
-        // from the button you want to move up in DOM 
-        // and find the closes <li> to remove
         this.closest('div').remove(); 
     }
-
     deleteButtons.forEach( button => {
-      // add the event listener to each button
       button.addEventListener('click', removeMe); 
     });
 }
 
-
-
 function addItem() {
     let item = document.createElement('div');
-    let item_p = document.createElement('p');
+    let item_input = document.createElement('input');
     let item_b = document.createElement('button');
     item.className = 'list_item';
     item.draggable = 'true';
-    item_p.innerHTML = 'Type here..';
-    item_p.setAttribute('contentEditable','true');
-    item.appendChild(item_p);
+    item_input.setAttribute('type','text');
+    item_input.setAttribute('placeholder','Type here..');
+    item.appendChild(item_input);
     item_b.type = 'button';
     item_b.className = 'delButt';
     item_b.innerHTML = 'x';
     item.appendChild(item_b)
     box1.appendChild(item);
-
     itemDraggable();
 }
