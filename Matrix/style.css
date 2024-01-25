@@ -52,7 +52,7 @@
 }
 
 .list_item input {
-    background-color: maroon;
+    background-color: transparent;
     color: white;
     border: none;
     margin-left: 10px;
@@ -61,4 +61,6 @@
 
 ::placeholder {
     color: white;
+    font-weight: bold;
+    opacity: 0.85;
 }
