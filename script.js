@@ -1,7 +1,11 @@
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+}
+
 let i = 0;
 (function typeWriter() {
-    let txt = "Barna";
-    let speed = 200;
+    let txt = "barna";
+    let speed = 280;
     if (i < txt.length) {
         document.getElementsByClassName('text')[0].innerHTML += txt.charAt(i);
         i++;
