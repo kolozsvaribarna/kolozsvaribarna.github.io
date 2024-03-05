@@ -28,12 +28,12 @@ body.light-theme {
     display:inline-flex;
 }
 .text {
-    font-size: 7vw;
+    font-size: 13vh;
 }
 .underscore {
     color: #900C3F;
-    font-size: 7vw;
-    animation: blinker .4s step-end infinite alternate;
+    font-size: 13vh;
+    animation: blinker .5s step-end infinite alternate;
 }
 @keyframes blinker {
     50% {opacity: 0;}
@@ -59,7 +59,7 @@ body.light-theme {
 }
 .toggle label::after {
 	background-color: #900C3F;
-	content: ' ';
+	content: '';
 	cursor: pointer;
 	display: inline-block;
 	position: absolute;
