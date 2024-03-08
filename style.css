@@ -25,9 +25,32 @@ body.light-theme {
     align-items: center;
     font-family: monospace;
 }
-.main h1 {
-    display:inline-flex;
+#title {
+    display: inline-flex;
+	place-content: center;
+	width: 100vw;
+	background-color: #141414;
+	color: #EAEFF2;
+	padding: 20px auto;
+	margin-top: 0;
+	z-index: 5;
+	box-shadow: 0 0 20px 0 #141414;
+	transition: all ease-in-out 0.3s;
 }
+#title.light-theme {
+	background-color: #EAEFF2;
+    color: #141414;
+	box-shadow: 0 0 20px 0 #EAEFF2;
+	transition: all ease-in-out 0.3s;
+}
+.stickyHeader {
+	display: inline-block;
+	position: fixed;
+	top: 0;
+	background-color: #141414;
+	transition: all ease-in-out 0.5s;
+}
+
 .text {
     font-size: 13vh;
 }
@@ -93,7 +116,29 @@ body.light-theme {
 	align-items: center;
 	place-items: center;
 }
-#as {
+.socials {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	width: 70vw;
+}
+.social a {
+	text-decoration: none;
+	color: #EAEFF2;
+	font-size: 6.5vh;
+	font-weight: bold;
+	transition: all ease-in-out .5s;
+}
+.social a.light-theme {
+	color: #141414;
+}
+.social a:hover {
 	color: #900C3F;
-	animation: blinker 3.5s ease-in-out infinite alternate;
+	transition: all ease-in-out .2s;
+}
+.social:nth-child(2) {
+	transition-delay: 200ms;
+}
+.social:nth-child(3) {
+	transition-delay: 400ms;
 }
