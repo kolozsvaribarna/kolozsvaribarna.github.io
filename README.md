@@ -8,7 +8,7 @@
 * tea enthusiast 🍵
 * 🇭🇺 / 🇬🇧 / 🇯🇵
 
-check out my site [here](https://azigazibarni.github.io/)<br>
+check out my site <a href="https://azigazibarni.github.io/" target="_blank">here</a><br>
 
 <h3>skills</h3>
 
