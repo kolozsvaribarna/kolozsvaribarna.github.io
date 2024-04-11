@@ -36,6 +36,7 @@ body.light-theme {
 	z-index: 5;
 	box-shadow: 0 0 20px 0 #141414;
 	transition: all ease-in-out 0.3s;
+	font-size: 12vh;
 }
 #title.light-theme {
 	background-color: #EAEFF2;
@@ -50,13 +51,8 @@ body.light-theme {
 	background-color: #141414;
 	transition: all ease-in-out 0.5s;
 }
-
-.text {
-    font-size: 13vh;
-}
 .underscore {
     color: #900C3F;
-    font-size: 13vh;
     animation: blinker .5s step-end infinite alternate;
 }
 @keyframes blinker {
@@ -67,6 +63,7 @@ body.light-theme {
 	position: sticky; 
 	z-index: 10;
 	top: 10px;
+	width: fit-content;
 }
 .toggle input[type=checkbox] {
 	display: none;
@@ -78,8 +75,8 @@ body.light-theme {
 	display: inline-block;
 	position: relative;
 	transition: all ease-in-out 0.3s;
-	width: 88px; /* 2*x + 2*2 */
-	height: 46px; /* x + 2*2 */
+	width: 88px;
+	height: 46px;
 }
 .toggle label::after {
 	background-color: #900C3F;
@@ -88,8 +85,8 @@ body.light-theme {
 	display: inline-block;
 	position: absolute;
 	transition: all ease-in-out 0.3s;
-	width: 42px; /* x */
-	height: 42px; /* x */
+	width: 42px;
+	height: 42px;
 }
 .toggle input[type=checkbox]:checked ~ label { /* light mode*/
 	background-color: #EAEFF2;
@@ -97,7 +94,7 @@ body.light-theme {
 }
 .toggle input[type=checkbox]:checked ~ label::after {
 	background-color: #900C3F;
-	transform: translateX(42px); /* x */
+	transform: translateX(42px);
 }
 .hidden {
 	opacity: 0;
@@ -141,4 +138,17 @@ body.light-theme {
 }
 .social:nth-child(3) {
 	transition-delay: 400ms;
+}
+@media only screen and (max-width: 600px) {
+	#title {
+		margin-top: 5vh;
+	}
+	.socials {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.social {
+		margin: 15px 0;
+	}
 }
