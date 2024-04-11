@@ -143,6 +143,9 @@ body.light-theme {
 	#title {
 		margin-top: 6.5vh;
 	}
+	.stickyHeader {
+		top: 6.5vh;
+	}
 	.socials {
 		display: flex;
 		flex-direction: column;
