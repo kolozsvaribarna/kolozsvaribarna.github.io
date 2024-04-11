@@ -6,7 +6,7 @@ window.onscroll = function() {addSticky()};
 let header = document.querySelectorAll('#title')[0];
 let sticky = header.offsetTop;
 function addSticky() {
-if (window.pageYOffset > sticky) {
+if (window.scrollY + 70 > sticky) {
     header.classList.add("stickyHeader");
   } else {
     header.classList.remove("stickyHeader");
