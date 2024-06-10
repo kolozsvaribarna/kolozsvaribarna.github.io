@@ -43,12 +43,18 @@ window.addEventListener('beforeunload', (event) => {
         messageText.innerHTML = "This site uses your browser's built-in localstorage API to store data locally.";
         messageContainer.style.borderColor = 'green';
         messageTitle.style.color = 'green';
+        messageButton.style.borderColor = 'green';
+        messageButton.style.color = 'green';
+        messageButton.style.borderWidth = '2px';
     }
     else {
         messageTitle.innerHTML = "Localstorage not found!";
         messageText.innerHTML = "This site is designed to use your browser's built-in localstorage API to store data locally. However, it is currently unavaliable."
         messageContainer.style.borderColor = 'maroon';
         messageTitle.style.color = 'maroon';
+        messageButton.style.borderColor = 'maroon';
+        messageButton.style.color = 'maroon';
+        messageButton.style.borderWidth = '2px';
     }
 })();
 
