@@ -1,3 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
+* {
+    user-select: none;
+    font-family: 'Fira mono', monospace;
+}
+.languageToggle {
+    float: left;
+    background: #242729;
+}
+.languageToggle input {
+   position: absolute;
+   opacity: 0;
+}
+.languageToggle input + label {
+   padding: 7px;
+   width: 1vw;
+   text-align: center;
+   float:left;
+   color: #fff;
+   cursor: pointer;
+}
+.languageToggle input:checked + label {
+   background: maroon;
+}
+
 h1 {
     color: maroon;
+}
+p {
+    color: maroon;
+    font-weight: bold;
 }
