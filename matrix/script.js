@@ -38,7 +38,7 @@ window.addEventListener('beforeunload', (event) => {
         this.closest('div').remove();
     }
 
-    if (typeof(localStorage) !== "undefined") {
+    if (localStorage) {
         messageTitle.innerHTML = "Localstorage found!";
         messageText.innerHTML = "This site uses your browser's built-in localstorage API to store data locally.";
         messageContainer.style.borderColor = 'green';
