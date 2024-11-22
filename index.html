@@ -8,27 +8,21 @@
     <title>barna_</title>
 </head>
 <body>
-
+    <button id="color-switch" onclick="toggleColorMode();"><img src="btn-img.svg"></button>
     <div id="main">
         <h1>barna_</h1>
         <span class="line"></span>
         <div>
             <section class="section-left">
-                <h2 id="about">about me</h2>
+                <h2>about me</h2>
                 <ul>
-                    <li id="about1">based in Hungary</li>
-                    <li id="about2">high school student</li>
-                    <li id="about3">learning computer science</li>
-                    <li id="about4">tea enthusiast</li>
-                    <li>
-                    <div class="languageToggle">
-                        <input id="en" value="en" name="lang" type="radio" checked /><label for="en">en</label> /
-                        <input id="jp" value="jp" name="lang" type="radio" /><label for="jp">jp</label> /
-                        <input id="hu" value="hu" name="lang" type="radio" /><label for="hu">hu</label>
-                    </div>
-                    </li>
+                    <li>based in Hungary</li>
+                    <li>high school student</li>
+                    <li>learning computer science</li>
+                    <li>tea enthusiast</li>
+                    <li>en/jp/hu</li>
                 </ul>
-                <h2 id="skills">skills</h2>
+                <h2>skills</h2>
                 <ul>
                     <li>html, css, bootstrap</li>
                     <li>javascript</li>
@@ -36,7 +30,7 @@
                     <li>php</li>
                     <li>c#</li>
                 </ul>
-                <h2 id="contact">contact</h2>
+                <h2>contact</h2>
                 <ul>
                     <li><a href="https://github.com/kolozsvaribarna" target="_blank">github</a></li>
                     <li><a href="https://www.instagram.com/kolozsvaribarna/" target="_blank">instagram</a></li>
@@ -45,11 +39,16 @@
             </section>
             <span id="left-section-line" class="line"></span>
             <section class="section-right">
-                <h2 id="projects">projects</h2>
+                <h2>projects</h2>
                 <ul>
                     <li><a href="matrix/index.html" target="_blank" class="disable-small">eisenhower matrix</a></li>
-                    <li id="projects1" class="list-desc">the eisenhower matrix is an effective and rather simple time management technique which helps you battle time management issues, as well as prioratising said tasks</li>
-                    <li class="list-desc-link"><span style="color: var(--bg-dark);">/ </span><a href="https://github.com/kolozsvaribarna/Eisenhower-matrix" target="_blank">github repository</a></li>
+                    <li class="list-desc">the eisenhower matrix is an effective and rather simple time management technique which helps you battle time management issues, as well as prioratising said tasks</li>
+                    <li class="list-desc-link"><span style="color: var(--bg-dark);">/</span><a href="https://github.com/kolozsvaribarna/Eisenhower-matrix" target="_blank">github repository</a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://github.com/kolozsvaribarna/2023-24-Projekt-I." target="_blank">number system converter</a></li>
+                    <li class="list-desc">a two man school project made in python with the aim of converting and doing arithmetics with different number systems</li>
+                    <li class="list-desc-link"><span style="color: var(--bg-dark);">/</span><a href="https://github.com/kolozsvaribarna/2023-24-Projekt-I./releases" target="_blank">github release</a></li>
                 </ul>
             </section>
         </div>

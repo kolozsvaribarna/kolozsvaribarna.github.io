@@ -10,19 +10,40 @@
     font-family: 'Fira mono', monospace;
 }
 :root {
-    --bg-light: #F0EBCE;
-    --bg-dark: #AA8B56;
-    --font-light:#8ea176;
-    --font-dark: #395144;
+    --bg-light: #e8dbcd;
+    --bg-dark: #cd8157;
+    --font-light:#247684;
+    --font-dark: #0d4954;
+    transition: background-color 0.5s linear, color 0.5s linear;
+}
+:root.dark-mode {
+    --bg-light: #2C3639;
+    --bg-dark: #cd8157;
+    --font-light: #A27B5C; 
+    --font-dark: #e8dbcd;
+    transition: background-color 0.5s linear, color 0.5s linear;
 }
 body {
     color: var(--font-dark);
     background-color: var(--bg-light);
 }
+#color-switch {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--font-dark);
+    border: none;
+    width: fit-content;
+    height: 40px;
+    transition: background-color 0.2s linear, color 0.2s linear;
+    position: fixed;
+    top: 1vw;
+    right: 1vw;
+}
 #main {
+    transition: background-color 0.5s linear, color 0.5s linear;
     display: block;
     animation: fade-in .8s;
-    padding: 3%;
+    padding: 0 3%;
 }
 #main > div {
     margin-left: 3%;
@@ -37,6 +58,12 @@ body {
     margin-right: 5%;
     float: right;
 }
+.section-left>ul {
+    margin-bottom: 5vh;
+}
+.section-right>ul:not(:first-of-type) {
+    margin-top: 5vh;
+}
 .line {
     display: block;
     border-top: 3px solid var(--bg-dark);
@@ -50,7 +77,7 @@ body {
 .list-desc {
     width: 80%;
     text-align: justify;
-    line-break: strict;
+    line-break: loose;
     margin: 0.8em 0;
     color: var(--font-light);
     animation: ease-in .1s;
@@ -97,7 +124,7 @@ h1 {
 }
 h2 {
     font-size: 1.7em;
-    margin: 25px 0 10px 0;
+    margin: 25px 0 5px 0;
 }
 ul {
     list-style: none;
@@ -106,6 +133,7 @@ ul {
 li {
     font-size: 1.3em;
     border: 1.3em 0;
+    color: var(--font-dark);
 }
 li:before { 
     content: "";
@@ -137,14 +165,4 @@ a::before {
 a:hover::before {
     transform-origin: left;
     transform: scaleX(1);
-}
-#en, #jp, #hu {
-    display: none;
-}
-input[type="radio"]:hover + label {
-    color: var(--font-light);
-    cursor: pointer;
-}
-input[type="radio"]:checked + label {
-    color: var(--bg-dark);
 }
